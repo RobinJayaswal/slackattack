@@ -274,7 +274,18 @@ controller.on('direct_mention', (bot, message) => {
 // reply to a direct message
 controller.on('direct_message', (bot, message) => {
   // reply to _message_ by using the _bot_ object
-  bot.reply(message, 'robot-robin is at your service, but I can\'t understand everything! Tell me \'help\' to hear what I can do.');
+  bot.reply(message, 'robot-robin is at your service, but I can\'t understand everything! Tell me \'help\' to hear what I can do. https://media4.giphy.com/media/3o7WTrvW0BNBaHrF4c/200.gif');
+});
+
+
+controller.on('outgoing_webhook', (bot, message) => {
+  // reply to _message_ by using the _bot_ object
+  const response = {
+    text: 'Just a quick sip of coffee and I\'ll be ready http://giphy.com/gifs/coffee-gif-brockurealities-DrJm6F9poo4aA',
+    unfurl_links: true,
+    unfurl_media: true,
+  };
+  bot.replyPublic(message, response);
 });
 
 console.log('starting bot');
