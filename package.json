@@ -1,8 +1,8 @@
 {
-  "name": "botman",
+  "name": "robot-robin",
   "version": "1.0.0",
   "description": "",
-  "author": "Suman Bera",
+  "author": "Robin Jayaswal",
   "main": "app/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -16,7 +16,11 @@
     "babel-cli": "^6.10.1",
     "babel-preset-es2015": "^6.9.0",
     "babel-preset-stage-2": "^6.5.0",
-    "botkit": "^0.2.2"
+    "botkit": "^0.2.2",
+    "forecast": "^0.2.1",
+    "node-geocoder": "^3.12.0",
+    "weather-forecast": "0.0.1",
+    "yelp": "^1.0.1"
   },
   "devDependencies": {
     "babel-eslint": "^6.0.4",
