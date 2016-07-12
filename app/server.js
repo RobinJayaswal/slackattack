@@ -261,8 +261,8 @@ controller.hears(['weather', 'sun(.*)', 'rain(.*)', 'snow(.*)'], ['direct_messag
 
 // respond to help
 controller.hears(['help'], ['direct_message', 'direct_mention', 'mention'], (bot, message) => {
-  controller.reply('Want to know about the weather outside or anywhere in the world? Simply ask me something like \'How\'s the weather?\', and I\'ll get you a full report!');
-  controller.reply('Hungry? Tell me! Let me know \'I\'m hungry\', for example, and I\'ll help you find just what you\'re looking for');
+  bot.reply('Want to know about the weather outside or anywhere in the world? Simply ask me something like \'How\'s the weather?\', and I\'ll get you a full report!');
+  bot.reply('Hungry? Tell me! Let me know \'I\'m hungry\', for example, and I\'ll help you find just what you\'re looking for');
 });
 
 // reply to a direct mention - @bot hello
